@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <section className="about w-full h-screen mt-[52px]">
+      <section className="about w-full md:about h-auto mt-[52px]">
         <div className="md:w-[90%] w-[95%] flex md:items-center md:flex-row flex-col gap-5 md:gap-5  mx-auto h-full">
           <div className="left md:mt-0 mt-5">
             <div className="userImage md:w-[300px] w-full overflow-hidden h-[400px] rounded-md bg-[#dadada]">
@@ -17,7 +17,9 @@ const About = () => {
             </div>
           </div>
           <div className="right md:w-[60%] w-full md:mt-0 mt-4 h-auto md:h-[400px]">
-            <h1 className="md:text-5xl text-2xl md:text-left text-center">About Me</h1>
+            <h1 className="md:text-5xl text-2xl md:text-left text-center">
+              About Me
+            </h1>
             <p className="mt-2 md:text-left text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
               placeat, corrupti consectetur eligendi pariatur ex obcaecati nihil

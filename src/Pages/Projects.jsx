@@ -1,10 +1,10 @@
-import React from 'react';
-import Project from '../Components/Project';
-import { useSelector } from 'react-redux';
-import Preview from '../Components/Preview';
+import React from "react";
+import Project from "../Components/Project";
+import { useSelector } from "react-redux";
+import Preview from "../Components/Preview";
 
 const Projects = () => {
-      const { img, projects } = useSelector((state) => state.project);
+  const { img, projects } = useSelector((state) => state.project);
 
   return (
     <>
@@ -15,16 +15,14 @@ const Projects = () => {
             My Projects
           </h1>
           <div className="md:mt-14 mt-10 flex flex-wrap gap-5 justify-center">
-            {
-              projects.map((project, index) => {
-                return <Project key={index} project={project} />
-              })
-            }
+            {projects.map((project, index) => {
+              return <Project key={index} project={project} />;
+            })}
           </div>
         </div>
       </section>
     </>
   );
-}
+};
 
 export default Projects;

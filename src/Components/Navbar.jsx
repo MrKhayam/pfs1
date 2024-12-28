@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { RiMenu4Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import { Avatar } from '@mui/material';
-
-
+import { Avatar } from "@mui/material";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
   return (
     <>
       <header className="w-full overflow-visible h-14 fixed p-2 font-[Poppins] bg-[#ffffff3c] backdrop-blur-sm">
@@ -21,22 +19,34 @@ const Navbar = () => {
           </div>
           <ul className="md:flex gap-7 hidden items-center">
             <li>
-              <NavLink to="/" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+              <NavLink
+                to="/"
+                className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold"
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+              <NavLink
+                to="/about"
+                className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold"
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+              <NavLink
+                to="/projects"
+                className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold"
+              >
                 Projects
               </NavLink>
             </li>
           </ul>
-          <NavLink to="/contact" className="bg-[#CFEDFF] md:block hidden transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md">
+          <NavLink
+            to="/contact"
+            className="bg-[#CFEDFF] md:block hidden transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md"
+          >
             Contact Me
           </NavLink>
           <RiMenu4Fill
@@ -60,22 +70,34 @@ const Navbar = () => {
           <div className="w-full p-8 mt-5 flex flex-col gap-5">
             <ul className="flex md:hidden gap-7 flex-col justify-center">
               <li>
-                <NavLink to="/" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+                <NavLink
+                  to="/"
+                  className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold"
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+                <NavLink
+                  to="/about"
+                  className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold"
+                >
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+                <NavLink
+                  to="/projects"
+                  className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold"
+                >
                   Projects
                 </NavLink>
               </li>
             </ul>
-            <NavLink to="/contact" className="bg-[#CFEDFF] md:hidden block transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md">
+            <NavLink
+              to="/contact"
+              className="bg-[#CFEDFF] md:hidden block transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md"
+            >
               Contact Me
             </NavLink>
           </div>
@@ -83,6 +105,6 @@ const Navbar = () => {
       </header>
     </>
   );
-}
+};
 
 export default Navbar;
