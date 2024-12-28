@@ -21,24 +21,24 @@ const Navbar = () => {
           </div>
           <ul className="md:flex gap-7 hidden items-center">
             <li>
-              <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+              <NavLink to="/" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+              <NavLink to="/about" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+              <NavLink to="/projects" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
                 Projects
               </NavLink>
             </li>
           </ul>
-          <button className="bg-[#CFEDFF] md:block hidden transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md">
+          <NavLink to="/contact" className="bg-[#CFEDFF] md:block hidden transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md">
             Contact Me
-          </button>
+          </NavLink>
           <RiMenu4Fill
             onClick={() => setNav(true)}
             size={25}
@@ -60,24 +60,24 @@ const Navbar = () => {
           <div className="w-full p-8 mt-5 flex flex-col gap-5">
             <ul className="flex md:hidden gap-7 flex-col justify-center">
               <li>
-                <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+                <NavLink to="/" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+                <NavLink to="/about" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
+                <NavLink to="/projects" className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
                   Projects
                 </NavLink>
               </li>
             </ul>
-            <button className="bg-[#CFEDFF] md:hidden block transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md">
+            <NavLink to="/contact" className="bg-[#CFEDFF] md:hidden block transition-all duration-300 hover:bg-[#b0e1ff] px-5 py-2 rounded-md">
               Contact Me
-            </button>
+            </NavLink>
           </div>
         </nav>
       </header>
