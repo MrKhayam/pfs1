@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RiMenu4Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
+import { Avatar } from '@mui/material';
 
 
 
@@ -11,7 +12,13 @@ const Navbar = () => {
     <>
       <header className="w-full h-14 fixed p-2 font-[Poppins">
         <nav className="md:w-[90%] w-full h-full mx-auto flex items-center justify-between">
-          <h1 className="logo font-semibold text-xl">Khayam Ijaz</h1>
+          <div className="logo font-semibold text-xl flex items-center gap-2">
+            <Avatar
+              alt="Khayam"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCH1LHaI8OdoN_zLKNSp9RFn6Qu-FEQKa8w&s"
+            />
+            <h1>Khayam Ijaz</h1>{" "}
+          </div>
           <ul className="md:flex gap-7 hidden items-center">
             <li>
               <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
@@ -35,12 +42,12 @@ const Navbar = () => {
           <RiMenu4Fill
             onClick={() => setNav(true)}
             size={25}
-                      cursor="pointer"
-                      className='md:hidden block'
+            cursor="pointer"
+            className="md:hidden block"
           />
         </nav>
         <nav
-          className={`absolute right-0 top-0 backdrop-blur-sm bg-[#ffffff6f] w-[75%] transition-all duration-300 h-full ${
+          className={`absolute right-0 top-0 z-30 backdrop-blur-sm bg-[#ffffffc8] w-[75%] transition-all duration-300 h-screen ${
             nav ? "translate-x-0" : "translate-x-[100%]"
           }`}
         >
@@ -50,7 +57,7 @@ const Navbar = () => {
             size={25}
             cursor="pointer"
           />
-          <div className="w-full p-10 mt-5 flex flex-col gap-5">
+          <div className="w-full p-8 mt-5 flex flex-col gap-5">
             <ul className="flex md:hidden gap-7 flex-col justify-center">
               <li>
                 <NavLink className="text-[#484848] cursor-pointer transition-all duration-300 hover:text-black font-semibold">
