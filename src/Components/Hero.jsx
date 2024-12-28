@@ -1,13 +1,16 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
     <>
-      <div className="md:w-[90%] w-full p2 h-full mx-auto flex md:flex-row flex-col-reverse md:items-center md:justify-between justify-center">
+      <div className="md:w-[90%] w-full p2 h-auto mx-auto flex md:flex-row flex-col-reverse md:items-center md:justify-between justify-center">
         <div className="left w-[95%] md:w-1/2 mt-3 md:block flex flex-col items-center mx-auto">
-          <h1 className="md:text-5xl text-2xl font-semibold">Hello I'm Khayam</h1>
+          <h1 className="md:text-5xl text-2xl font-semibold">
+            Hello I'm Khayam
+          </h1>
           <p className="md:text-lg mt-2 md:text-left text-center">
             I create designs that tell stories and leave a lasting impact. From
             logos to branding, I turn your ideas into clear, memorable visuals

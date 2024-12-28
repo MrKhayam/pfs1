@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 const Home = () => {
   return (
     <>
-          <div className="w-full h-auto">
+      <div className="w-full h-auto overflow-scroll">
         <Hero />
         <Footer />
       </div>
