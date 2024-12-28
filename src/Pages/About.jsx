@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <section className="md:h-[90%] w-full h-auto mt-[52px]">
+      <section className="md:h-[90%] w-full h-full overflow-auto bg-green-900 mt-[52px]">
         <div className="md:w-[90%] w-[95%] flex md:items-center md:flex-row flex-col gap-5 md:gap-5  mx-auto h-full">
           <div className="left md:mt-0 mt-5">
             <div className="userImage md:w-[300px] w-full overflow-hidden h-[400px] rounded-md bg-[#dadada]">
@@ -35,7 +35,7 @@ const About = () => {
               laudantium eos inventore reiciendis doloribus provident veniam,
               earum doloremque consequuntur quam quisquam deserunt.
             </p>
-            <div className="btns mb-10 md:mb-0 md:w-full w-[90%] mx-auto mt-3 flex md:flex-row flex-col gap-3 items-center">
+            <div className="btns mb-20 md:mb-0 md:w-full w-[90%] mx-auto mt-3 flex md:flex-row flex-col gap-3 items-center">
               <NavLink className="bg-[#CFEDFF] md:w-auto w-full text-center px-5 py-3 rounded-md hover:bg-[#b0e1ff] transition-all duration-300 shadow">
                 Contact Me
               </NavLink>
