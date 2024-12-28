@@ -9,7 +9,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
   return (
     <>
-      <header className="w-full h-14 p-2 font-[Poppins">
+      <header className="w-full h-14 fixed p-2 font-[Poppins">
         <nav className="md:w-[90%] w-full h-full mx-auto flex items-center justify-between">
           <h1 className="logo font-semibold text-xl">Khayam Ijaz</h1>
           <ul className="md:flex gap-7 hidden items-center">
