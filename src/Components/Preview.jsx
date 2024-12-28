@@ -10,9 +10,9 @@ const Preview = () => {
   return (
     <>
           <div className="w-full top-0 z-50 flex items-center justify-center absolute h-screen bg-[#000000b1] backdrop-blur-sm">
-              <IoClose color='white' onClick={() => dispatch(closeImg())} size={25} cursor="pointer" className='absolute top-5 right-5' />
-              <div className="md:w-[60%] w-[95%] shadow-md h-[200px] md:h-[450px] overflow-hidden flex items-center justify-center object-cover rounded-md">
+              <div className="md:w-[60%] relative w-[95%] shadow-md h-[200px] md:h-[450px] overflow-hidden flex items-center justify-center object-cover rounded-md">
                   <img className='w-full h-full' src={preview} alt="" />
+              <IoClose color='white' onClick={() => dispatch(closeImg())} size={25} cursor="pointer" className='absolute top-2 right-2' />
               </div>
       </div>
     </>
