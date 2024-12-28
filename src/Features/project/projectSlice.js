@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  img: false,
+    img: false,
+    preview: '',
   projects: [
     {
       id: 1,
@@ -34,8 +35,9 @@ export const projectSlice = createSlice({
   name: "project",
   initialState,
   reducers: {
-    openImg: (state) => {
-      state.img = true;
+    openImg: (state, action) => {
+          state.img = true;
+          state.preview = action.payload;
     },
     closeImg: (state) => {
       state.img = false;

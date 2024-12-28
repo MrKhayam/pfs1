@@ -8,7 +8,7 @@ const Project = ({project}) => {
       <>
       <div className="md:w-[380px] w-full overflow-hidden cursor-pointer flex items-center justify-center rounded-md md:h-[250px] h-[200px] bg-[#dadada]">
               <img
-                  onClick={() => dispatch(openImg())}
+                  onClick={() => dispatch(openImg(project.pImg))}
           src={project.pImg}
           alt="Project"
           className="w-full h-full object-cover transition-all duration-500 hover:scale-105"

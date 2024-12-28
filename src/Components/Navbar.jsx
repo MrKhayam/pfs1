@@ -10,7 +10,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
   return (
     <>
-      <header className="w-full h-14 fixed p-2 font-[Poppins">
+      <header className="w-full h-14 fixed p-2 font-[Poppins] bg-[#ffffff3c] backdrop-blur-sm">
         <nav className="md:w-[90%] w-full h-full mx-auto flex items-center justify-between">
           <div className="logo font-semibold text-xl flex items-center gap-2">
             <Avatar
