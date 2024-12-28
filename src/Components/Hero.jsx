@@ -1,7 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import Footer from "./Footer";
 
 const Hero = () => {
   return (

@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="w-full h-full overflow-scroll">
+      <section className="w-full h-auto">
         {img && <Preview />}
         <div className="w-[90%] h-auto mt-[80px] projects mx-auto">
           <h1 className="md:text-4xl text-2xl font-semibold text-center">
