@@ -7,8 +7,8 @@ const About = () => {
     <>
       <section className="about w-full mt-[52px]">
         <div className="md:w-[90%] w-[95%] flex md:items-center md:flex-row flex-col gap-5 md:gap-5  mx-auto h-full">
-          <div className="left">
-            <div className="userImage md:w-[300px] overflow-hidden md:h-[400px] rounded-md bg-[#dadada]">
+          <div className="left md:mt-0 mt-5">
+            <div className="userImage md:w-[300px] w-full overflow-hidden h-[400px] rounded-md bg-[#dadada]">
               <img
                 src="https://i.pinimg.com/736x/2a/97/84/2a9784adbd64c0d0fe688bfb5f64772c.jpg"
                 alt="User Image"
@@ -16,9 +16,9 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="right md:w-[60%] md:h-[400px]">
-            <h1 className="md:text-5xl">About Me</h1>
-            <p className="mt-2">
+          <div className="right md:w-[60%] w-full md:mt-0 mt-4 h-auto md:h-[400px]">
+            <h1 className="md:text-5xl text-2xl md:text-left text-center">About Me</h1>
+            <p className="mt-2 md:text-left text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
               placeat, corrupti consectetur eligendi pariatur ex obcaecati nihil
               facilis tempore? Aliquam in pariatur commodi ratione amet
@@ -33,7 +33,7 @@ const About = () => {
               laudantium eos inventore reiciendis doloribus provident veniam,
               earum doloremque consequuntur quam quisquam deserunt.
             </p>
-            <div className="btns md:w-full w-[90%] mt-3 flex md:flex-row flex-col gap-3 items-center">
+            <div className="btns md:w-full w-[90%] mx-auto mt-3 flex md:flex-row flex-col gap-3 items-center">
               <NavLink className="bg-[#CFEDFF] md:w-auto w-full text-center px-5 py-3 rounded-md hover:bg-[#b0e1ff] transition-all duration-300 shadow">
                 Contact Me
               </NavLink>
