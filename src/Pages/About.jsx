@@ -1,12 +1,11 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import Footer from "../Components/Footer";
 
 const About = () => {
   return (
     <>
-      <section className="about w-full h-auto mt-[52px]">
+      <section className="about w-full h-screen mt-[52px]">
         <div className="md:w-[90%] w-[95%] flex md:items-center md:flex-row flex-col gap-5 md:gap-5  mx-auto h-full">
           <div className="left md:mt-0 mt-5">
             <div className="userImage md:w-[300px] w-full overflow-hidden h-[400px] rounded-md bg-[#dadada]">
@@ -44,7 +43,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </section>
     </>
   );

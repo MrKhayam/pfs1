@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Hero = () => {
   return (
     <>
-      <div className="md:w-[90%] w-full p2 h-auto mx-auto flex md:flex-row flex-col-reverse md:items-center md:justify-between justify-center">
+      <div className="md:w-[90%] w-full p2 h-full mx-auto flex md:flex-row flex-col-reverse md:items-center md:justify-between justify-center">
         <div className="left w-[95%] md:w-1/2 mt-3 md:block flex flex-col items-center mx-auto">
           <h1 className="md:text-5xl text-2xl font-semibold">
             Hello I'm Khayam

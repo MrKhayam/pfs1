@@ -1,13 +1,11 @@
 import React from 'react';
 import Hero from '../Components/Hero';
-import Footer from '../Components/Footer';
 
 const Home = () => {
   return (
     <>
-      <div className="w-full h-auto overflow-scroll">
+      <div className="w-full md:h-screen">
         <Hero />
-        <Footer />
       </div>
     </>
   );

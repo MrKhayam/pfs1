@@ -2,7 +2,6 @@ import React from 'react';
 import Project from '../Components/Project';
 import { useSelector } from 'react-redux';
 import Preview from '../Components/Preview';
-import Footer from '../Components/Footer';
 
 const Projects = () => {
       const { img, projects } = useSelector((state) => state.project);
@@ -23,7 +22,6 @@ const Projects = () => {
             }
           </div>
         </div>
-          <Footer />
       </section>
     </>
   );
